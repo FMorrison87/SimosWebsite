@@ -174,10 +174,12 @@ main section {
   width: 250px;
   height: 50px;
   border: 1px solid #b35f29;
-  font-family: "Rye", cursive;
-  font: normal 25px/50px "Rye";
+  /* font-family: "Rye", cursive; */
+  font-family: "Lora", serif;
+  font: normal 25px/50px "Lora";
   text-align: center;
-  color: #52331f;
+  /* color: #52331f; */
+  color: #fff;
   background: #c76a2e;
   border-radius: 4px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.15) inset, 0 6px 10px rgba(0, 0, 0, 0.15);
@@ -228,6 +230,22 @@ main section {
 
 .hours {
   font-size: 20px;
+}
+
+.days {
+  text-align: right;
+  padding-right: 0.85em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.phone {
+  font-size: 1.4em;
+}
+
+.phone > a {
+  text-decoration: none;
+  color: inherit;
 }
 
 main section h1,
@@ -287,4 +305,9 @@ main section .info h1::before {
 .yellow-bg {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(https://images.unsplash.com/photo-1461354464878-ad92f492a5a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+}
+
+footer {
+  background: #565e67;
+  color: #fff;
 }
