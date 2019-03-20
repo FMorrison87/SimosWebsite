@@ -33,6 +33,11 @@ h1 {
   }
 }
 
+a,
+a:hover {
+  text-decoration: none;
+}
+
 #threeItems .row {
   margin-right: 0;
   margin-left: 0;
@@ -44,7 +49,7 @@ h1 {
 }
 
 main section .info h1 {
-  color: #8a1;
+  color: #00733e;
   font-family: "Lora", serif;
 }
 
@@ -53,7 +58,7 @@ p {
 }
 
 .logo-color {
-  color: #8a1;
+  /* color: #8a1; */
   font-weight: 800;
   font-family: "Rye", cursive;
 }
@@ -69,6 +74,11 @@ p {
   font-weight: 800;
   font-family: "Rye", cursive;
   text-decoration: none;
+}
+
+.simosLogo {
+  width: 65%;
+  height: auto;
 }
 
 .cta-color {
@@ -106,7 +116,7 @@ p {
   display: block;
   width: 100%;
   height: 3px;
-  background-color: #8a1;
+  background-color: #00733e;
 }
 
 .hero {
@@ -365,6 +375,7 @@ main section .info h1::before {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(https://images.unsplash.com/photo-1461354464878-ad92f492a5a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
   background-position: center;
+  background-size: cover;
 }
 
 footer {
