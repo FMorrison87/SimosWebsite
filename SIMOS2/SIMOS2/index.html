@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <link
+      href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Rye" rel="stylesheet" />
+
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/animations.css" />
+
+    <title>Simos Produce</title>
+  </head>
+  <script>
+    $(window).scroll(function() {
+      $(".animatedElement").each(function() {
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow + 600) {
+          $(this).addClass("slideRight");
+        }
+      });
+    });
+  </script>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-light bg-light navbar-expand-lg fixed-top shadow-sm"
+      >
+        <div class="container">
+          <a href="#" class="mb-0 logo-color h3"
+            ><img
+              src="./Images/Simos_Logo.png"
+              alt="SimosLogo"
+              class="simosLogo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto align-items-center">
+              <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#services" class="nav-link">Services</a>
+              </li>
+              <li class="nav-item">
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+              </li>
+              <li class="nav-item">
+                <a href="#hours" class="nav-link">Hours</a>
+              </li>
+              <li class="nav-item">
+                <a href="tel:4137348232" class="nav-link">413-734-8232</a>
+              </li>
+            </ul>
+            <a href="#contact" class="nav-link"
+              ><button
+                type="button"
+                name=""
+                id=""
+                class="btn cta-color btn-md btn-block"
+              >
+                CONTACT
+              </button></a
+            >
+          </div>
+        </div>
+      </nav>
+      <section class="hero">
+        <div class="hero-inner animationObject slideDown container">
+          <h2>
+            <span class="hero-text-main">Delivering farm-fresh produce</span>
+            <br />
+            to schools, communities and establishments since 1934.
+          </h2>
+          <a href="#about"
+            ><button type="button" name="" id="" class="btn cta-outline btn-lg">
+              LEARN MORE
+            </button>
+          </a>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section id="threeItems">
+        <div class="container banner-section">
+          <div class="row justify-content-center">
+            <div class="column-item row col-lg-4 justify-content-center">
+              <img
+                src="https://images.unsplash.com/photo-1447175008436-054170c2e979?ixlib=rb-1.2.1&auto=format&fit=crop&w=1161&q=80"
+                alt="first_image"
+              />
+              <div class="banner">Service</div>
+              <p>
+                At Simos we pride ourselves on our commitment to service. We are
+                dedicated to providing you with not only the best produce we can
+                source, but also the most reliable service in the industry. We
+                go above and beyond for our customers.
+              </p>
+            </div>
+            <div class="column-item row col-lg-4 justify-content-center">
+              <img
+                src="https://images.unsplash.com/photo-1482137526803-25edd694e5c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                alt="first_image"
+              />
+              <div class="banner">Quality</div>
+              <p>
+                At Simos we pride ourselves on our commitment to service. We are
+                dedicated to providing you with not only the best produce we can
+                source, but also the most reliable service in the industry. We
+                go above and beyond for our customers.
+              </p>
+            </div>
+            <div class="column-item row col-lg-4 justify-content-center">
+              <img
+                src="https://images.unsplash.com/photo-1533499513792-8c4483a36c9a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
+                alt="first_image"
+              />
+              <div class="banner">Local</div>
+              <p>
+                At Simos we pride ourselves on our commitment to service. We are
+                dedicated to providing you with not only the best produce we can
+                source, but also the most reliable service in the industry. We
+                go above and beyond for our customers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="bg-light text-dark">
+        <div class="container info">
+          <h1>ABOUT</h1>
+          <div class="info-section row">
+            <img
+              class="col-lg-5"
+              src="./Images/simos_truck1.png"
+              alt=""
+            />
+            <p class="col-lg-5">
+              Simos was founded in 1934, and since then it's been a testament to
+              quality. How have we remained in business for so long? Simple. We
+              place the quality of the produce we source, and the happiness of
+              our customers above all else. Your success is ours, so we are
+              deeply invested in sourcing the finest, freshest produce, so that
+              you can put your best foot forward, everyday. Schools,
+              communities, restaurants, we cater to all levels, and we are more
+              than happy to source you something special.
+            </p>
+            <a href="#contact">
+              <button
+                type="button"
+                name=""
+                id=""
+                class="btn-lg btn cta-color center-block"
+              >
+                CONTACT US TO PLACE AN ORDER
+              </button></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="text-dark">
+        <div class="container info">
+          <h1>FARM TO SCHOOLS</h1>
+          <div class="info-section row">
+            <img
+              class="col-lg-5"
+              src="https://images.pexels.com/photos/256520/pexels-photo-256520.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt=""
+            />
+            <p class="col-lg-5">
+              Through connecting farmers with area schools we help provide
+              produce that is locally grown and seasonally available to our
+              kids.
+            </p>
+
+            <a href="#contact">
+              <button
+                type="button"
+                name=""
+                id=""
+                class="btn-lg btn cta-color center-block"
+              >
+                CONTACT US TO PLACE AN ORDER
+              </button></a
+            >
+          </div>
+        </div>
+      </section>
+      <section id="about" class="bg-light text-dark">
+        <div class="container info">
+          <h1>CONVENIENCE & QUALITY</h1>
+          <div class="info-section row">
+            <img
+              class="col-lg-5 info-image"
+              src="https://images.unsplash.com/photo-1464684979825-ad6f2811cef2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80"
+              alt="farmer-potato"
+            />
+            <p class="col-lg-5">
+              Quality produce and convenience is our motto. We go out of our way
+              to source the freshest, most available produce. When things are in
+              season, we source them locally. Buying local allows us to support
+              our farms and farmers while providing a high quality, regional
+              product.
+            </p>
+            <a href="#contact">
+              <button
+                type="button"
+                name=""
+                id=""
+                class="btn-lg btn cta-color center-block"
+              >
+                CONTACT US TO PLACE AN ORDER
+              </button></a
+            >
+          </div>
+        </div>
+      </section>
+      <section id="testimonials" class="image-bg text-light">
+        <div class="container">
+          <h1>FROM OUR CUSTOMERS</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </section>
+      <section id="hours" class="bg-light text-dark">
+        <div class="container info">
+          <h1>HOURS</h1>
+          <div class="hours row justify-content-center">
+            <div class="days col-2-lg">
+              Monday-Friday:<br />
+              Saturday:<br />
+              Sunday:<br /><br />
+            </div>
+            <div class="col-2-lg">
+              6:00AM-1:20PM<br />
+              6:00AM-11:00AM<br />
+              CLOSED <br /><br />
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-2-lg">
+              <p class="phone">
+                PHONE
+                <a href="tel:4137348232" class="nav-link">413-734-8232</a>
+              </p>
+            </div>
+          </div>
+          <a href="#contact">
+            <button
+              type="button"
+              name=""
+              id=""
+              class="btn-lg btn cta-color center-block"
+            >
+              CONTACT US TO PLACE AN ORDER
+            </button></a
+          >
+        </div>
+      </section>
+      <section id="contact" class="text-light bg-dark">
+        <div class="container">
+          <h1>CONTACT US TO PLACE AN ORDER</h1>
+          <form
+            id="contact-form"
+            method="post"
+            action="contact.php"
+            role="form"
+          >
+            <div class="form-row">
+              <div class="col">
+                <label for="FirstName">First Name</label>
+                <input
+                  name="firstname"
+                  id="FirstName"
+                  type="text"
+                  class="form-control"
+                  placeholder="First name"
+                />
+              </div>
+              <div class="col">
+                <label for="LastName">Last Name</label>
+                <input
+                  name="lastname"
+                  id="LastName"
+                  type="text"
+                  class="form-control"
+                  placeholder="Last name"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="InputEmail1">Email address</label>
+              <input
+                name="email"
+                type="email"
+                class="form-control"
+                id="InputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Enter email"
+              />
+              <small id="emailHelp" class="form-text text-muted"
+                >We'll never share your email with anyone else.</small
+              >
+            </div>
+            <div class="form-group">
+              <label for="FormControlTextarea1">Message</label>
+              <textarea
+                name="message"
+                class="form-control"
+                id="FormControlTextarea1"
+                rows="5"
+                placeholder="Type your message here..."
+              ></textarea>
+            </div>
+
+            <input
+              type="submit"
+              class="btn cta-color btn-send"
+              value="SEND MESSAGE"
+            />
+          </form>
+
+          <!-- <form
+            id="contact-form"
+            method="post"
+            action="contact.php"
+            role="form"
+          >
+            <div class="messages"></div>
+
+            <div class="controls">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="form_name">Firstname *</label>
+                    <input
+                      id="form_name"
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      placeholder="Please enter your firstname *"
+                      required="required"
+                      data-error="Firstname is required."
+                    />
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="form_lastname">Lastname *</label>
+                    <input
+                      id="form_lastname"
+                      type="text"
+                      name="surname"
+                      class="form-control"
+                      placeholder="Please enter your lastname *"
+                      required="required"
+                      data-error="Lastname is required."
+                    />
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="form_email">Email *</label>
+                    <input
+                      id="form_email"
+                      type="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="Please enter your email *"
+                      required="required"
+                      data-error="Valid email is required."
+                    />
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="form_need">Please specify your need *</label>
+                    <select
+                      id="form_need"
+                      name="need"
+                      class="form-control"
+                      required="required"
+                      data-error="Please specify your need."
+                    >
+                      <option value=""></option>
+                      <option value="Request quotation"
+                        >Request quotation</option
+                      >
+                      <option value="Request order status"
+                        >Request order status</option
+                      >
+                      <option value="Request copy of an invoice"
+                        >Request copy of an invoice</option
+                      >
+                      <option value="Other">Other</option>
+                    </select>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="form_message">Message *</label>
+                    <textarea
+                      id="form_message"
+                      name="message"
+                      class="form-control"
+                      placeholder="Message for me *"
+                      rows="4"
+                      required="required"
+                      data-error="Please, leave us a message."
+                    ></textarea>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <input
+                    type="submit"
+                    class="btn btn-success btn-send"
+                    value="Send message"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <p class="text-muted">
+                    <strong>*</strong> These fields are required.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </form> -->
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright 2019 Simos Produce</p>
+      <p>(413) 734-8232</p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
