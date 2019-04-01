@@ -38,6 +38,11 @@ a:hover {
   text-decoration: none;
 }
 
+.btn {
+  letter-spacing: 0.1em;
+  border-radius: 0;
+}
+
 #threeItems .row {
   margin-right: 0;
   margin-left: 0;
@@ -82,18 +87,8 @@ p {
 }
 
 .simosLogo {
-  position: absolute;
-  top: 30px;
-  width: 100%;
+  width: 60%;
   height: auto;
-}
-
-.logo-wrapper {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  border-radius: 100%;
-  background-color: white;
 }
 
 .cta-color {
@@ -125,9 +120,13 @@ p {
   padding: 15px;
 }
 
+.bg-transparent {
+  background-color: rgba(235, 229, 206, 0.6);
+}
+
 .navbar {
   transition: all 800ms ease-in-out;
-  background-color: transparent !important;
+  padding: 0 1rem;
 }
 
 .navbar-banner {
@@ -140,30 +139,6 @@ p {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-.navbar-banner::after,
-.navbar-banner::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 14px;
-  height: 0px;
-  width: 0px;
-  border: 31px solid #c76a2e;
-  z-index: -1;
-}
-
-/* The left ribbon */
-.navbar-banner::before {
-  border-left-color: transparent;
-  left: 60px;
-}
-
-/* The right ribbon */
-.navbar-banner::after {
-  border-right-color: transparent;
-  right: 60px;
-}
-
 .sticky-offset {
   margin-top: 74px;
 }
@@ -174,12 +149,91 @@ p {
   font-weight: 900;
 }
 
+a.contact-link {
+  padding-top: 0;
+  padding-bottom: 0;
+  color: #fff;
+}
+
 .active::after {
   content: "";
   display: block;
   width: 100%;
   height: 3px;
   background-color: #00733e;
+}
+
+.penant-banner-outside {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  padding: 0 0.3em;
+  padding-top: 0;
+  background-color: #9a5113;
+}
+
+.penant-banner-outside::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: 42px;
+  border: #9a5113 51.5px solid;
+  right: 0;
+  border-bottom: transparent 20px solid;
+}
+
+.penant-banner-middle {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  padding: 0 0.06em;
+  padding-top: 0;
+  background-color: #da9238;
+}
+
+.penant-banner-middle::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: 40px;
+  border: #da9238 46.6px solid;
+  right: 0;
+  border-bottom: transparent 20px solid;
+}
+
+.penant-banner-inside {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  color: #fff;
+  padding: 0 0.5em;
+  padding-top: 0;
+  background-color: #c76a2e;
+}
+
+.penant-banner-inside::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: 40px;
+  border: #c76a2e 45.5px solid;
+  right: 0;
+  border-bottom: transparent 20px solid;
 }
 
 #nav-contact-button {
@@ -192,6 +246,7 @@ p {
       rgba(248, 236, 194, 0.3)
     ),
     url(../Images/simos_truck2.png);
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -204,15 +259,33 @@ p {
 
 .hero-inner {
   text-transform: none;
-  text-align: left;
+  text-align: right;
   color: white;
-  text-shadow: 2px 2px 8px #3a3a3a;
+  text-shadow: 3px 3px 5px #3a3a3a;
 }
 
 .hero-inner button {
   margin-top: 2em;
   width: 12em;
   height: 2.3em;
+}
+
+.header-food {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 1em;
+  width: 100%;
+  height: 30%;
+  margin: 0.5em 0;
+  border: 4px solid #fff;
+  background-color: rgb(68, 109, 61);
+}
+
+.header-food img {
+  width: 15%;
+  border: 4px solid #fff;
+  padding: 0.4em;
 }
 
 /* Ribbon Buttons */
@@ -224,7 +297,7 @@ p {
   height: 52px;
   display: inline-block;
   position: relative;
-  background: #314f0b;
+  background: #0b4f2d;
   z-index: 1;
   margin: 0 auto;
 }
@@ -236,7 +309,7 @@ p {
   height: 0;
   width: 0;
   top: 0;
-  border: #314f0b 26px solid;
+  border: #0b4f2d 26px solid;
   right: -21px;
   border-right: transparent 11.76px solid;
 }
@@ -248,7 +321,7 @@ p {
   height: 0;
   width: 0;
   top: 0;
-  border: #314f0b 26px solid;
+  border: #0b4f2d 26px solid;
   left: -21px;
   border-left: transparent 11.76px solid;
 }
@@ -260,7 +333,7 @@ p {
   height: 42px;
   display: inline-block;
   position: relative;
-  background: #557427;
+  background: #609236;
   z-index: 2;
 }
 
@@ -271,7 +344,7 @@ p {
   height: 0;
   width: 0;
   top: 0;
-  border: #557427 21px solid;
+  border: #609236 21px solid;
   right: -16px;
   border-right: transparent 8.96px solid;
 }
@@ -283,7 +356,7 @@ p {
   height: 0;
   width: 0;
   top: 0;
-  border: #557427 21px solid;
+  border: #609236 21px solid;
   left: -16px;
   border-left: transparent 8.96px solid;
 }
@@ -293,14 +366,14 @@ p {
   display: flex;
   align-items: center;
   position: relative;
-  background: #426515;
+  background: #00733e;
   z-index: 3;
   text-align: center;
   padding: 5px 15px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
-  color: #dbaf47;
+  color: #fbeb47;
 }
 
 .light-green-ribbon::before {
@@ -310,7 +383,7 @@ p {
   height: 0;
   width: 0;
   top: 0;
-  border: #426515 20px solid;
+  border: #00733e 20px solid;
   right: -15px;
   border-right: transparent 8.4px solid;
 }
@@ -324,7 +397,121 @@ p {
   height: 0;
   width: 0;
   top: 0;
-  border: #426515 20px solid;
+  border: #00733e 20px solid;
+  left: -15px;
+  border-left: transparent 8.4px solid;
+}
+
+/* Orange Ribbon Buttons */
+
+.dark-orange-ribbon {
+  padding-top: 5px;
+  padding-left: 3px;
+  padding-right: 3px;
+  height: 52px;
+  display: inline-block;
+  position: relative;
+  background: #9a5113;
+  z-index: 1;
+  margin: 0 auto;
+}
+
+.dark-orange-ribbon::before {
+  z-index: -1;
+  content: " ";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: 0;
+  border: #9a5113 26px solid;
+  right: -21px;
+  border-right: transparent 11.76px solid;
+}
+
+.dark-orange-ribbon::after {
+  z-index: -1;
+  content: " ";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: 0;
+  border: #9a5113 26px solid;
+  left: -21px;
+  border-left: transparent 11.76px solid;
+}
+
+.gold-orange-ribbon {
+  padding-top: 1px;
+  padding-left: 0;
+  padding-right: 0;
+  height: 42px;
+  display: inline-block;
+  position: relative;
+  background: #da9238;
+  z-index: 2;
+}
+
+.gold-orange-ribbon::before {
+  z-index: -1;
+  content: " ";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: 0;
+  border: #da9238 21px solid;
+  right: -16px;
+  border-right: transparent 8.96px solid;
+}
+
+.gold-orange-ribbon::after {
+  z-index: -1;
+  content: " ";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: 0;
+  border: #da9238 21px solid;
+  left: -16px;
+  border-left: transparent 8.96px solid;
+}
+
+.light-orange-ribbon {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: #c76a2e;
+  z-index: 3;
+  text-align: center;
+  padding: 5px 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+}
+
+.light-orange-ribbon::before {
+  z-index: -1;
+  content: " ";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: 0;
+  border: #c76a2e 20px solid;
+  right: -15px;
+  border-right: transparent 8.4px solid;
+}
+
+.light-orange-ribbon::after {
+  left: -16px;
+  border-left: transparent 11.76px solid;
+  z-index: -1;
+  content: " ";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: 0;
+  border: #c76a2e 20px solid;
   left: -15px;
   border-left: transparent 8.4px solid;
 }
@@ -336,7 +523,7 @@ p {
 }
 .hero-text-sub {
   font-weight: 400;
-  font-size: 2em;
+  font-size: 2.5em;
   font-family: "Italianno", cursive;
 }
 
@@ -426,10 +613,6 @@ main section {
   justify-content: space-around;
   align-content: space-around;
   align-items: center;
-}
-
-.bg-light {
-  background-image: url("https://www.transparenttextures.com/patterns/back-pattern.png");
 }
 
 @media screen and (max-width: 768px) {
