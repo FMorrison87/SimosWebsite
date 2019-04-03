@@ -43,6 +43,11 @@ a:hover {
   border-radius: 0;
 }
 
+#threeItems {
+  margin: 0;
+  padding: 0;
+}
+
 #threeItems .row {
   margin-right: 0;
   margin-left: 0;
@@ -51,6 +56,21 @@ a:hover {
 #threeItems .banner-section {
   padding-right: 0;
   padding-left: 0;
+}
+
+.red-back {
+  background-color: #9c5232;
+  background-image: url(../Images/burlap.png);
+}
+
+.blue-back {
+  background-color: #687a43;
+  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
+}
+
+.green-back {
+  background-color: #a68d38;
+  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
 }
 
 main section .info h1 {
@@ -255,6 +275,15 @@ a.contact-link {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.hero::before {
+  content: "";
+  background-color: rgba(248, 236, 194, 0.4);
+  height: 60px;
+  width: 100%;
+  position: absolute;
+  top: 0;
 }
 
 .hero-inner {
@@ -548,10 +577,12 @@ main section {
 .column-item {
   position: relative;
   z-index: 1;
+  padding: 2em 1em;
 }
 
 .column-item p {
-  margin-top: 2em;
+  color: #fff;
+  margin-top: 1em;
   text-align: justify;
   margin-right: 20px;
   margin-left: 20px;
@@ -639,9 +670,10 @@ main section {
 }
 
 .info-image {
+  background-image: url(../Images/burlap.png);
+  margin: 2em 0;
   height: auto;
   width: 100%;
-  border-radius: 100px;
 }
 
 /* #about img {
