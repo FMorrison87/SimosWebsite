@@ -4,8 +4,11 @@ function darkenNav() {
   if (window.scrollY <= 0) {
     navbar.classList.remove("bg-light");
     navbar.classList.remove("shadow-sm");
+    navbar.classList.remove("navbar-light");
+    navbar.classList.add("navbar-dark");
   } else {
     navbar.classList.add("bg-light");
+    navbar.classList.remove("navbar-dark");
     navbar.classList.add("navbar-light");
     navbar.classList.add("shadow-sm");
   }
