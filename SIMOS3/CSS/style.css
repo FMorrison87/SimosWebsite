@@ -58,9 +58,43 @@ a:hover {
   padding-left: 0;
 }
 
+.column-item h3 {
+  width: 100%;
+  text-align: center;
+}
+
+.banner-carrot {
+  background-color: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+}
+
+.banner-carrot img {
+  display: block;
+  width: auto;
+  height: 85%;
+  margin: auto;
+  padding-top: 15px;
+}
+
+.banner-mountain {
+  background-color: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+}
+
+.banner-mountain img {
+  display: block;
+  width: auto;
+  height: 100%;
+  margin: auto;
+}
+
 .red-back {
   background-image: linear-gradient(
-      rgba(181, 66, 16, 0.6),
+      rgba(199, 106, 46, 0.6),
       rgba(181, 66, 16, 0.6)
     ),
     url(../Images/burlap.png);
@@ -69,26 +103,46 @@ a:hover {
 
 .blue-back {
   background-image: linear-gradient(
-      rgba(98, 140, 13, 0.6),
+      rgba(52, 115, 63, 0.6),
       rgba(98, 140, 13, 0.6)
     ),
     url(../Images/burlap.png);
   background-position: center;
 }
 
-.green-back {
+.yellow-back {
   background-image: linear-gradient(
-      rgba(173, 138, 20, 0.6),
+      rgba(254, 234, 52, 0.6),
       rgba(173, 138, 20, 0.6)
     ),
     url(../Images/burlap.png);
   background-position: center;
 }
 
+.burlap-back {
+  background-image: linear-gradient(
+      rgba(173, 138, 20, 0.2),
+      rgba(173, 138, 20, 0.2)
+    ),
+    url(../Images/burlap.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.burlap-back-light {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(../Images/burlap.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 main section .info h1 {
-  color: #00733e;
-  font-family: "Lora", serif;
-  font-size: 2em;
+  color: #343a40;
 }
 
 main section .info .conv-and-qual {
@@ -123,13 +177,22 @@ p {
   height: auto;
 }
 
-@media screen and (max-width: 768px) {
-  .simosLogo {
+@media screen and (max-width: 990px) {
+  .show {
+    display: block;
+  }
+  .hide {
     display: none;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
+  .simosLogo {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 992px) {
   .simosLogo2 {
     display: none;
   }
@@ -174,9 +237,6 @@ p {
 }
 
 .navbar-banner {
-  /* background-color: #f1eee6 !important;
-  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
-  border: 2px #d2c69e dashed; */
   background-color: #c76a2e !important;
   background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
   border: 2px #d2c69e dashed;
@@ -211,77 +271,159 @@ a.contact-link {
   background-color: #00733e;
 }
 
-.penant-banner-outside {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 60px;
-  padding: 0 0.3em;
-  padding-top: 0;
-  background-color: #9a5113;
+@media screen and (max-width: 992px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .penant-banner-outside {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    padding: 0 0.3em;
+    padding-top: 0;
+    background-color: transparent;
+    margin-bottom: 0.5em;
+  }
+
+  .penant-banner-outside::after {
+    content: none;
+    z-index: -1;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: 42px;
+    border: #9a5113 51.5px solid;
+    right: 0;
+    border-bottom: transparent 20px solid;
+  }
+
+  .penant-banner-middle {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    padding: 0 0.06em;
+    padding-top: 0;
+    background-color: transparent;
+  }
+
+  .penant-banner-middle::after {
+    content: none;
+    z-index: -1;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: 40px;
+    border: #da9238 46.6px solid;
+    right: 0;
+    border-bottom: transparent 20px solid;
+  }
+
+  .penant-banner-inside {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    color: #fff;
+    padding: 0 0.5em;
+    padding-top: 0;
+    background-color: #c76a2e;
+  }
+
+  .penant-banner-inside::after {
+    content: none;
+    z-index: -1;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: 40px;
+    border: #c76a2e 45.5px solid;
+    right: 0;
+    border-bottom: transparent 20px solid;
+  }
 }
 
-.penant-banner-outside::after {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  height: 0;
-  width: 0;
-  top: 42px;
-  border: #9a5113 51.5px solid;
-  right: 0;
-  border-bottom: transparent 20px solid;
-}
+@media screen and (min-width: 991px) {
+  .penant-banner-outside {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    padding: 0 0.3em;
+    padding-top: 0;
+    background-color: #9a5113;
+  }
 
-.penant-banner-middle {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 60px;
-  padding: 0 0.06em;
-  padding-top: 0;
-  background-color: #da9238;
-}
+  .penant-banner-outside::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: 42px;
+    border: #9a5113 51.5px solid;
+    right: 0;
+    border-bottom: transparent 20px solid;
+  }
 
-.penant-banner-middle::after {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  height: 0;
-  width: 0;
-  top: 40px;
-  border: #da9238 46.6px solid;
-  right: 0;
-  border-bottom: transparent 20px solid;
-}
+  .penant-banner-middle {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    padding: 0 0.06em;
+    padding-top: 0;
+    background-color: #da9238;
+  }
 
-.penant-banner-inside {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 60px;
-  color: #fff;
-  padding: 0 0.5em;
-  padding-top: 0;
-  background-color: #c76a2e;
-}
+  .penant-banner-middle::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: 40px;
+    border: #da9238 46.6px solid;
+    right: 0;
+    border-bottom: transparent 20px solid;
+  }
 
-.penant-banner-inside::after {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  height: 0;
-  width: 0;
-  top: 40px;
-  border: #c76a2e 45.5px solid;
-  right: 0;
-  border-bottom: transparent 20px solid;
+  .penant-banner-inside {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    color: #fff;
+    padding: 0 0.5em;
+    padding-top: 0;
+    background-color: #c76a2e;
+  }
+
+  .penant-banner-inside::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: 40px;
+    border: #c76a2e 45.5px solid;
+    right: 0;
+    border-bottom: transparent 20px solid;
+  }
 }
 
 #nav-contact-button {
@@ -309,7 +451,7 @@ a.contact-link {
   text-shadow: 3px 3px 5px #3a3a3a;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) {
   .hero-inner {
     text-align: center;
   }
@@ -454,6 +596,11 @@ a.contact-link {
 }
 
 /* Orange Ribbon Buttons */
+
+.ribbon-as-button {
+  display: flex;
+  justify-content: center;
+}
 
 .dark-orange-ribbon {
   padding-top: 5px;
@@ -610,57 +757,6 @@ main section {
   margin-left: 20px;
 }
 
-#threeItems img {
-  border-radius: 50%;
-  height: 250px;
-  width: 250px;
-}
-
-.banner {
-  position: absolute;
-  left: 69%;
-  display: block;
-  margin: 180px -200px;
-  width: 250px;
-  height: 50px;
-  border: 1px solid #008c8c;
-  background-image: url("https://www.transparenttextures.com/patterns/back-pattern.png");
-  /* font-family: "Rye", cursive; */
-  font-family: "Lora", serif;
-  font: normal 25px/50px "Lora";
-  text-align: center;
-  /* color: #52331f; */
-  color: #fff;
-  background-color: #008c8c;
-  border-radius: 4px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15) inset, 0 6px 10px rgba(0, 0, 0, 0.15);
-}
-
-.banner::before,
-.banner::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: -30px;
-  top: 24px;
-  display: block;
-  width: 49px;
-  height: 0px;
-  border: 25px solid #008c8c;
-  border-right: 20px solid #006363;
-  border-bottom-color: #008c8c;
-  border-left-color: transparent;
-  transform: rotate(-5deg);
-}
-
-.banner::after {
-  left: auto;
-  right: -30px;
-  border-left: 20px solid #006363;
-  border-right: 30px solid transparent;
-  transform: rotate(5deg);
-}
-
 .info-section {
   display: flex;
   justify-content: space-around;
@@ -692,10 +788,11 @@ main section {
 }
 
 .info-image {
-  background-image: url(../Images/burlap.png);
   margin: 2em 0;
   height: auto;
   width: 100%;
+  border: 2px dashed #b19f76;
+  padding: 10px;
 }
 
 /* #about img {
@@ -735,7 +832,7 @@ p {
   text-align: center;
 }
 
-main section .info h1::after {
+/* main section .info h1::after {
   content: "";
   display: inline-block;
   background-color: #d3d3d3;
@@ -753,7 +850,7 @@ main section .info h1::before {
   width: 10%;
   margin-bottom: 0.3em;
   margin-right: 0.4em;
-}
+} */
 
 @media screen and (max-width: 768px) {
   main section .info h1::after {
