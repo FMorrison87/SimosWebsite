@@ -10,6 +10,10 @@ body {
   z-index: -2;
 }
 
+.scrollSpy {
+  position: relative;
+}
+
 h1,
 h2,
 h3,
@@ -124,7 +128,7 @@ a:hover {
       rgba(173, 138, 20, 0.2),
       rgba(173, 138, 20, 0.2)
     ),
-    url(../Images/burlap.png);
+    url(../Images/bg-paper-01.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -135,7 +139,7 @@ a:hover {
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
     ),
-    url(../Images/burlap.png);
+    url(../Images/bg-paper-01.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -762,6 +766,22 @@ main section {
   padding: 5em 0 4em 0;
 }
 
+@media screen and (max-width: 990px) {
+  main section {
+    padding: 1em 0 1em 0;
+  }
+
+  main section > #testimonials {
+    padding: 2em 0 1em 0;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .flex-reverse {
+    flex-direction: column-reverse;
+  }
+}
+
 .column-item {
   position: relative;
   z-index: 1;
@@ -814,6 +834,14 @@ main section {
   padding: 10px;
 }
 
+.info-image-school {
+  margin: 2em 0;
+  height: auto;
+  width: 100%;
+  border: 2px dashed #d7cfc3;
+  padding: 10px;
+}
+
 /* #about img {
   width: 35%;
   height: 35%;
@@ -840,9 +868,23 @@ main section {
   font-size: 1.4em;
 }
 
-.phone > a {
+.phone a {
   text-decoration: none;
   color: inherit;
+}
+
+.carousel-item.active::after,
+li.active::after {
+  content: none;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #00733e;
+}
+
+.carousel-item p {
+  padding: 0 1.5em;
+  padding-bottom: 2em;
 }
 
 main section h1,
@@ -902,15 +944,20 @@ p {
 }
 
 .image-bg {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(https://images.unsplash.com/photo-1461354464878-ad92f492a5a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
   background-position: center;
   background-size: cover;
 }
 
+#testimonials {
+  height: 25em;
+}
+
 footer {
   background: #565e67;
   color: #fff;
+  height: 10em;
 }
 
 /* Hamburger second buttons style overrides */

@@ -72,18 +72,21 @@
   </script>
   <body>
     <header>
-      <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
+      <nav
+        id="navbar-spy"
+        class="navbar navbar-dark navbar-expand-lg fixed-top"
+      >
         <div class="container">
-          <a href="#" class="mb-0 navbar-brand h3"
+          <a href="#" class="mb-0 h3"
             ><img
               src="./Images/Simos_Logo3.png"
               alt="SimosLogo"
               class="simosLogo"
             />
           </a>
-          <a href="tel:4137348232" class="text-dark phone-mobile"
+          <!-- <a href="tel:4137348232" class="text-dark phone-mobile"
             >413-734-8232</a
-          >
+          > -->
 
           <button
             class="navbar-toggler second-button"
@@ -129,6 +132,7 @@
           </div>
         </div>
       </nav>
+
       <section class="hero">
         <!-- <div class="simos-truck"></div> -->
         <div class="hero-inner animationObject slideDown container">
@@ -174,6 +178,7 @@
         </div>
       </section>
     </header>
+
     <main>
       <section id="threeItems">
         <div class="banner-section">
@@ -238,218 +243,304 @@
           </div>
         </div>
       </section>
-      <section id="about" class="bg-light text-dark burlap-back">
-        <div class="container info">
-          <div class="info-section row">
-            <img
-              class="col-lg-6 info-image"
-              src="./Images/simos_truck1.png"
-              alt=""
-            />
-            <div class="col-lg-6">
-              <h1>ABOUT</h1>
-              <p>
-                Simos was founded in 1934, and since then it's been a testament
-                to quality. How have we remained in business for so long?
-                Simple. We place the quality of the produce we source, and the
-                happiness of our customers above all else. Your success is ours,
-                so we are deeply invested in sourcing the finest, freshest
-                produce, so that you can put your best foot forward, everyday.
-                Schools, communities, restaurants, we cater to all levels, and
-                we are more than happy to source you something special.
-              </p>
-              <div class="ribbon-as-button">
-                <a href="#contact"
-                  ><div class="dark-orange-ribbon">
-                    <div class="gold-orange-ribbon">
-                      <div class="light-orange-ribbon">
-                        PLACE AN ORDER
+      
+        <section id="about" class="bg-light text-dark burlap-back">
+          <div class="container info">
+            <div class="info-section row">
+              <img
+                class="col-lg-6 info-image"
+                src="./Images/simos_truck1.png"
+                alt=""
+              />
+              <div class="col-lg-6">
+                <h1>ABOUT</h1>
+                <p>
+                  Simos was founded in 1934, and since then it's been a
+                  testament to quality. How have we remained in business for so
+                  long? Simple. We place the quality of the produce we source,
+                  and the happiness of our customers above all else. Your
+                  success is ours, so we are deeply invested in sourcing the
+                  finest, freshest produce, so that you can put your best foot
+                  forward, everyday. Schools, communities, restaurants, we cater
+                  to all levels, and we are more than happy to source you
+                  something special.
+                </p>
+                <div class="ribbon-as-button">
+                  <a href="#contact"
+                    ><div class="dark-orange-ribbon">
+                      <div class="gold-orange-ribbon">
+                        <div class="light-orange-ribbon">
+                          PLACE AN ORDER
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="services" class="text-dark burlap-back-light">
-        <div class="container info">
-          <div class="info-section row">
-            <div class="col-lg-6">
-              <h1>FARM TO SCHOOLS</h1>
-              <p>
-                Through connecting farmers with area schools we help provide
-                produce that is locally grown and seasonally available to our
-                kids.
-              </p>
-
-              <div class="ribbon-as-button">
-                <a href="#contact"
-                  ><div class="dark-orange-ribbon">
-                    <div class="gold-orange-ribbon">
-                      <div class="light-orange-ribbon">
-                        PLACE AN ORDER
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <img
-              class="col-lg-6 info-image"
-              src="https://images.pexels.com/photos/256520/pexels-photo-256520.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-              alt=""
-            />
-          </div>
-        </div>
-      </section>
-      <section id="about" class="bg-light text-dark burlap-back">
-        <div class="container info">
-          <div class="info-section row">
-            <img
-              class="col-lg-6 info-image"
-              src="https://images.unsplash.com/photo-1464684979825-ad6f2811cef2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80"
-              alt="farmer-potato"
-            />
-            <div class="col-lg-6">
-              <h1 class="conv-and-qual">
-                CONVENIENCE & QUALITY
-              </h1>
-              <p>
-                Quality produce and convenience is our motto. We go out of our
-                way to source the freshest, most available produce. When things
-                are in season, we source them locally. Buying local allows us to
-                support our farms and farmers while providing a high quality,
-                regional product.
-              </p>
-              <div class="ribbon-as-button">
-                <a href="#contact"
-                  ><div class="dark-orange-ribbon">
-                    <div class="gold-orange-ribbon">
-                      <div class="light-orange-ribbon">
-                        PLACE AN ORDER
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="testimonials" class="image-bg text-light">
-        <div class="container">
-          <h1>FROM OUR CUSTOMERS</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </div>
-      </section>
-      <section id="hours" class="text-dark burlap-back-light">
-        <div class="container info">
-          <h1>HOURS</h1>
-          <div class="hours row justify-content-center">
-            <div class="days col-2-lg">
-              Monday-Friday:<br />
-              Saturday:<br />
-              Sunday:<br /><br />
-            </div>
-            <div class="col-2-lg">
-              6:00AM-1:20PM<br />
-              6:00AM-11:00AM<br />
-              CLOSED <br /><br />
-            </div>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-2-lg">
-              <p class="phone">
-                PHONE
-                <a href="tel:4137348232" class="nav-link">413-734-8232</a>
-              </p>
-            </div>
-          </div>
-          <div class="ribbon-as-button">
-            <a href="#contact"
-              ><div class="dark-orange-ribbon">
-                <div class="gold-orange-ribbon">
-                  <div class="light-orange-ribbon">
-                    PLACE AN ORDER
-                  </div>
+                  </a>
                 </div>
               </div>
-            </a>
+            </div>
           </div>
-        </div>
-      </section>
-      <section id="contact" class="text-light bg-dark">
-        <div class="container">
-          <h1>CONTACT US TO PLACE AN ORDER</h1>
-          <form
-            id="contact-form"
-            method="post"
-            action="contact.php"
-            role="form"
-          >
-            <div class="form-row">
-              <div class="col">
-                <label for="FirstName">First Name</label>
-                <input
-                  name="firstname"
-                  id="FirstName"
-                  type="text"
-                  class="form-control"
-                  placeholder="First name"
-                />
+        </section>
+        <section id="services" class="text-dark burlap-back-light">
+          <div class="container info">
+            <div class="info-section row flex-reverse">
+              <div class="col-lg-6">
+                <h1>FARM TO SCHOOLS</h1>
+                <p>
+                  Through connecting farmers with area schools we help provide
+                  produce that is locally grown and seasonally available to our
+                  kids.
+                </p>
+
+                <div class="ribbon-as-button">
+                  <a href="#contact"
+                    ><div class="dark-orange-ribbon">
+                      <div class="gold-orange-ribbon">
+                        <div class="light-orange-ribbon">
+                          PLACE AN ORDER
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
               </div>
-              <div class="col">
-                <label for="LastName">Last Name</label>
-                <input
-                  name="lastname"
-                  id="LastName"
-                  type="text"
-                  class="form-control"
-                  placeholder="Last name"
-                />
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="InputEmail1">Email address</label>
-              <input
-                name="email"
-                type="email"
-                class="form-control"
-                id="InputEmail1"
-                aria-describedby="emailHelp"
-                placeholder="Enter email"
+              <img
+                class="col-lg-6 info-image-school"
+                src="https://images.pexels.com/photos/256520/pexels-photo-256520.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt=""
               />
-              <small id="emailHelp" class="form-text text-muted"
-                >We'll never share your email with anyone else.</small
-              >
             </div>
-            <div class="form-group">
-              <label for="FormControlTextarea1">Message</label>
-              <textarea
-                name="message"
-                class="form-control"
-                id="FormControlTextarea1"
-                rows="5"
-                placeholder="Type your message here..."
-              ></textarea>
+          </div>
+        </section>
+        <section id="about" class="bg-light text-dark burlap-back">
+          <div class="container info">
+            <div class="info-section row">
+              <img
+                class="col-lg-6 info-image"
+                src="https://images.unsplash.com/photo-1464684979825-ad6f2811cef2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80"
+                alt="farmer-potato"
+              />
+              <div class="col-lg-6">
+                <h1 class="conv-and-qual">
+                  CONVENIENCE & QUALITY
+                </h1>
+                <p>
+                  Quality produce and convenience is our motto. We go out of our
+                  way to source the freshest, most available produce. When
+                  things are in season, we source them locally. Buying local
+                  allows us to support our farms and farmers while providing a
+                  high quality, regional product.
+                </p>
+                <div class="ribbon-as-button">
+                  <a href="#contact"
+                    ><div class="dark-orange-ribbon">
+                      <div class="gold-orange-ribbon">
+                        <div class="light-orange-ribbon">
+                          PLACE AN ORDER
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
+          </div>
+        </section>
+        <section id="testimonials" class="image-bg text-light">
+          <!--Carousel Wrapper-->
+          <div
+            id="carousel-example-1z"
+            class="carousel slide carousel-fade"
+            data-ride="carousel"
+          >
+            <!-- Title -->
 
-            <input
-              type="submit"
-              class="btn cta-color btn-send"
-              value="SEND MESSAGE"
-            />
-          </form>
+            <h1>FROM OUR CUSTOMERS</h1>
+            <!--Indicators-->
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carousel-example-1z"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+              <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+            </ol>
+            <!--/.Indicators-->
+            <!--Slides-->
+            <div class="carousel-inner container" role="listbox">
+              <!--First slide-->
+              <div class="carousel-item active">
+                <p>"We have been a customer for over ten years.  They have great value, great knowledge and most important great product.  They are a locally owned business that purchases from local farms, that is very important to us.  The team at Simos Produce is always available to answer question and find whatever your produce needs may be. Their knowledge of the industry is second to none."
+                  <br />
+                  - Dario F. Nardi<br>
+                  Supervisor of School Cafeterias
+                </p>
+              </div>
+              <!--/First slide-->
+              <!--Second slide-->
+              <div class="carousel-item">
+                <p>
+                  I rely on Simos for produe, fruit and eggs for my restaurant.
+                  The quality is where I want it, and I know that if I have any
+                  issues, I'll be able to work with Simos to get them fixed and
+                  keep my business running smoothly.<br />
+                  - Michael Kornak, Restaurant Owner
+                </p>
+              </div>
+              <!--/Second slide-->
+              <!--Third slide-->
+              <div class="carousel-item">
+                <p>
+                  I switched to Simos last year, and since then I've been
+                  consistently impressed with both the quality of their
+                  products, and their responsiveness to my requests.<br />
+                  - Taylor Walter, Smith Foodstuffs
+                </p>
+              </div>
+              <!--/Third slide-->
+            </div>
+            <!--/.Slides-->
+            <!--Controls-->
+            <a
+              class="carousel-control-prev"
+              href="#carousel-example-1z"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carousel-example-1z"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+            <!--/.Controls-->
+          </div>
+          <!--/.Carousel Wrapper-->
+          <div class="container">
+            <!-- <h1>FROM OUR CUSTOMERS</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p> -->
+          </div>
+        </section>
+        <section id="hours" class="text-dark burlap-back-light">
+          <div class="container info">
+            <h1>HOURS</h1>
+            <div class="hours row justify-content-center">
+              <div class="days col-2-lg">
+                Monday-Friday:<br />
+                Saturday:<br />
+                Sunday:<br /><br />
+              </div>
+              <div class="col-2-lg">
+                6:00AM-1:20PM<br />
+                6:00AM-11:00AM<br />
+                CLOSED <br /><br />
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-2-lg">
+                <p class="phone">
+                <h1>PHONE</h1>
+                <a href="tel:4137348232" class="phone text-dark"
+                  >413-734-8232</a
+                >
+              </p>
+              </div>
+            </div>
+            <div class="ribbon-as-button">
+              <a href="#contact"
+                ><div class="dark-orange-ribbon">
+                  <div class="gold-orange-ribbon">
+                    <div class="light-orange-ribbon">
+                      PLACE AN ORDER
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        
+        </section>
+        <section id="contact" class="text-light bg-dark">
+          <div class="container">
+            <h1>CONTACT US TO PLACE AN ORDER</h1>
+            <form
+              id="contact-form"
+              method="post"
+              action="contact.php"
+              role="form"
+            >
+              <div class="form-row">
+                <div class="col">
+                  <label for="FirstName">First Name</label>
+                  <input
+                    name="firstname"
+                    id="FirstName"
+                    type="text"
+                    class="form-control"
+                    placeholder="First name"
+                  />
+                </div>
+                <div class="col">
+                  <label for="LastName">Last Name</label>
+                  <input
+                    name="lastname"
+                    id="LastName"
+                    type="text"
+                    class="form-control"
+                    placeholder="Last name"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="InputEmail1">Email address</label>
+                <input
+                  name="email"
+                  type="email"
+                  class="form-control"
+                  id="InputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter email"
+                />
+                <small id="emailHelp" class="form-text text-muted"
+                  >We'll never share your email with anyone else.</small
+                >
+              </div>
+              <div class="form-group">
+                <label for="FormControlTextarea1">Message</label>
+                <textarea
+                  name="message"
+                  class="form-control"
+                  id="FormControlTextarea1"
+                  rows="5"
+                  placeholder="Type your message here..."
+                ></textarea>
+              </div>
 
-          <!-- <form
+              <input
+                type="submit"
+                class="btn cta-color btn-send"
+                value="SEND MESSAGE"
+              />
+            </form>
+
+            <!-- <form
             id="contact-form"
             method="post"
             action="contact.php"
@@ -565,9 +656,11 @@
               </div>
             </div>
           </form> -->
-        </div>
-      </section>
+          </div>
+        </section>
+      
     </main>
+
     <footer>
       <p>Copyright 2019 Simos Produce</p>
       <p>(413) 734-8232</p>

@@ -8,6 +8,7 @@ $(document).ready(function() {
   $(".third-button").on("click", function() {
     $(".animated-icon3").toggleClass("open");
   });
+  $(".scrollSpy").scrollspy({ target: "#navbar-spy" });
 });
 
 const navbar = document.querySelector(".navbar");
@@ -47,13 +48,13 @@ function logoShowMobile() {
   if (window.scrollY <= 0) {
     logo.classList.remove("show");
     logo.classList.add("hide");
-    phoneMobile.classList.remove("show");
-    phoneMobile.classList.add("hide");
+    // phoneMobile.classList.remove("show");
+    // phoneMobile.classList.add("hide");
   } else {
     logo.classList.add("show");
     logo.classList.remove("hide");
-    phoneMobile.classList.add("show");
-    phoneMobile.classList.remove("hide");
+    // phoneMobile.classList.add("show");
+    // phoneMobile.classList.remove("hide");
   }
 }
 
@@ -77,6 +78,55 @@ function menuCloseOnScroll() {
 function setHamburgerColor() {
   hamburgerColor.forEach(color => (color.style.backgroundColor = "#343a40"));
 }
+
+// Making a custom scrollspy
+
+const heroSection = document.querySelector(".hero");
+const threeItems = document.querySelector("#threeItems");
+const aboutSection = document.querySelector("#about");
+const servicesSection = document.querySelector("#services");
+const testimonialsSection = document.querySelector("#testimonials");
+const hoursSection = document.querySelector("#hours");
+const aboutNavlink = navItems.item(0);
+const servicesNavlink = navItems.item(1);
+const testimonialsNavlink = navItems.item(2);
+const hoursNavlink = navItems.item(3);
+
+function customScrollSpy() {
+  let setAboutCoords = aboutSection.getBoundingClientRect();
+  let setServicesCoords = servicesSection.getBoundingClientRect();
+  let setTestimonialsCoords = testimonialsSection.getBoundingClientRect();
+  let setHoursCoords = hoursSection.getBoundingClientRect();
+
+  if (
+    setAboutCoords.top - 20 <= 0 &&
+    setAboutCoords.top >= aboutSection.offsetHeight * -1 + 20
+  ) {
+    navItems.forEach(item => item.classList.remove("active"));
+    aboutNavlink.classList.add("active");
+  } else if (
+    setServicesCoords.top - 20 <= 0 &&
+    setServicesCoords.top >= servicesSection.offsetHeight * -1
+  ) {
+    navItems.forEach(item => item.classList.remove("active"));
+    servicesNavlink.classList.add("active");
+  } else if (
+    setTestimonialsCoords.top - 20 <= 0 &&
+    setTestimonialsCoords.top >= testimonialsSection.offsetHeight * -1 + 20
+  ) {
+    navItems.forEach(item => item.classList.remove("active"));
+    testimonialsNavlink.classList.add("active");
+  } else if (
+    setHoursCoords.top - 20 <= 0 &&
+    setHoursCoords.top >= hoursSection.offsetHeight * -1
+  ) {
+    navItems.forEach(item => item.classList.remove("active"));
+    hoursNavlink.classList.add("active");
+  } else {
+    navItems.forEach(item => item.classList.remove("active"));
+  }
+}
+
 document.addEventListener("DOMContentLoaded", darkenNav);
 document.addEventListener("DOMContentLoaded", logoShowMobile);
 
@@ -85,5 +135,7 @@ document.addEventListener("scroll", logoShowMobile);
 document.addEventListener("scroll", menuCloseOnScroll);
 hamburger.addEventListener("click", mobileHamburgerClick);
 hamburger.addEventListener("click", setHamburgerColor);
+
+document.addEventListener("scroll", customScrollSpy);
 
 navItems.forEach(item => item.addEventListener("click", switchActive));
