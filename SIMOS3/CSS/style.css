@@ -888,7 +888,7 @@ li.active::after {
 }
 
 main section h1,
-p {
+main section p {
   padding: 0 0 0.5em 0;
   text-align: center;
 }
@@ -950,14 +950,25 @@ p {
   background-size: cover;
 }
 
+#hours,
+#contact {
+  padding: 2em 0;
+}
+
 #testimonials {
+  padding-top: 2em;
   height: 25em;
 }
 
-footer {
-  background: #565e67;
-  color: #fff;
-  height: 10em;
+@media screen and (max-width: 768px) {
+  #testimonials {
+    height: 30em;
+  }
+}
+
+.btn-send {
+  display: block;
+  margin: auto;
 }
 
 /* Hamburger second buttons style overrides */
@@ -1143,4 +1154,42 @@ footer {
   transform: rotate(-45deg);
   top: 21px;
   left: 8px;
+}
+
+/* Footer */
+
+footer {
+  background: #565e67;
+  color: #fff;
+  padding: 2em 0;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+footer p {
+  margin: 0;
+}
+
+.footer-text-right {
+  text-align: right;
+}
+
+.simosLogoFooter {
+  width: 150px;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    text-align: center;
+  }
+  .footer-text-right {
+    text-align: center;
+  }
 }
